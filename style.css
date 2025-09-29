@@ -1,0 +1,85 @@
+:root {
+  --butter-yellow: #fce38a;
+  --blueberry-blue: #6c91bf;
+  --cream: #fffaf0;
+  --spice-orange: #f4a261;
+  --text-brown: #5c4b3b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-brown);
+}
+
+header {
+  background-color: var(--butter-yellow);
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--blueberry-blue);
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--blueberry-blue);
+}
+
+button {
+  background-color: var(--blueberry-blue);
+  color: var(--cream);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--spice-orange);
+}
+
+#snack-container {
+  padding: 1rem;
+  text-align: center;
+}
+
+#loader {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem;
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+#loader.bounce {
+  transform: translateY(-5px);
+}
+
+img {
+  max-width: 300px;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.spice-trail {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.spice-trail.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  background-color: var(--butter-yellow);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
