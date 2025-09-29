@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Snack Oracle 🍲</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack Oracle 🍲</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Snack Oracle 🍲🌶️</h1>
+      <p>A sprinkle of snack wisdomw for your soul🧂🥄</p>
+    </header>
 
-  <header>
-    <h1>Snack Oracle 🍲🌶️</h1>
-    <p>A sprinkle of snack wisdomw for your soul🧂🥄</p>
-  </header>
+    <main>
+      <!-- Category Selector -->
+      <section id="category-section">
+        <label for="tag-select">Choose a category 🍽️</label>
+        <select id="tag-select">
+          <option value="">-- Select --</option>
+          <option value="snack">Snack</option>
+          <option value="dessert">Dessert</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="gluten free">Gluten Free</option>
+        </select>
+        <button id="search-tag-btn">Search by Category 🧁</button>
+      </section>
+      <!-- Ingredient Search -->
+      <section id="ingredient-section">
+        <label for="ingredient-input">Search by ingredient 🧄</label>
+        <input
+          type="text"
+          id="ingredient-input"
+          placeholder="e.g. garlic, chocolate, tofu"
+        />
+        <button id="search-ingredient-btn">Find Snack by Ingredient 🍞</button>
+      </section>
+      <!-- Random Snack Button -->
+      <button id="get-snack-btn">Reveal My Snack ✨🍴</button>
 
-  <main>
-    <!-- Category Selector -->
-    <section id="category-section">
-      <label for="tag-select">Choose a category 🍽️</label>
-      <select id="tag-select">
-        <option value="">-- Select --</option>
-        <option value="snack">Snack</option>
-        <option value="dessert">Dessert</option>
-        <option value="vegetarian">Vegetarian</option>
-        <option value="gluten free">Gluten Free</option>
-      </select>
-      <button id="search-tag-btn">Search by Category 🧁</button>
-    </section>
+      <!-- Fork/Spoon Loader Animation -->
+      <div id="loader" class="hidden">🥄🍴 Loading your snack...</div>
 
-    <!-- Random Snack Button -->
-    <button id="get-snack-btn">Reveal My Snack ✨🍴</button>
+      <!-- Snack Wisdom of the Day -->
+      <section id="wisdom-section">
+        <h3>Snack Wisdom of the Day 🍞🥢🍫</h3>
+        <p id="wisdom-text"></p>
+      </section>
 
-    <!-- Fork/Spoon Loader Animation -->
-    <div id="loader" class="hidden">🥄🍴 Loading your snack...</div>
+      <!-- Snack Content -->
+      <section id="snack-container"></section>
+    </main>
 
-    <!-- Snack Wisdom of the Day -->
-    <section id="wisdom-section">
-      <h3>Snack Wisdom of the Day 🍞🥢🍫</h3>
-      <p id="wisdom-text"></p>
-    </section>
+    <footer>
+      <p>Made with love and leftovers 🧁🍋</p>
+    </footer>
 
-    <!-- Snack Content -->
-    <section id="snack-container"></section>
-  </main>
-
-  <footer>
-    <p>Made with love and leftovers 🧁🍋</p>
-  </footer>
-
-  <script type="module" src="main.js"></script>
-</body>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
