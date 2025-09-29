@@ -25,7 +25,9 @@ h1 {
   color: var(--blueberry-blue);
 }
 
-button {
+/* General button styles */
+button,
+#search-ingredient-btn {
   background-color: var(--blueberry-blue);
   color: var(--cream);
   border: none;
@@ -37,8 +39,36 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+/* Specific tweak for ingredient button */
+#search-ingredient-btn {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+/* Hover effect for all buttons */
+button:hover,
+#search-ingredient-btn:hover {
   background-color: var(--spice-orange);
+}
+
+#ingredient-section {
+  margin: 1.5rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#ingredient-input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--blueberry-blue);
+  border-radius: 6px;
+  width: 250px;
+  max-width: 80%;
+  background-color: var(--cream);
+  color: var(--text-brown);
 }
 
 #snack-container {
@@ -62,7 +92,7 @@ img {
   max-width: 300px;
   border-radius: 12px;
   margin-top: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .spice-trail {
@@ -72,6 +102,7 @@ img {
   transform: translateY(-10px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
 .spice-trail.visible {
   opacity: 1;
   transform: translateY(0);
@@ -82,38 +113,4 @@ footer {
   text-align: center;
   padding: 0.5rem;
   font-size: 0.9rem;
-}
-#ingredient-section {
-  margin: 1.5rem auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-#ingredient-input {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: 1px solid var(--blueberry-blue);
-  border-radius: 6px;
-  width: 250px;
-  max-width: 80%;
-  background-color: var(--cream);
-  color: var(--text-brown);
-}
-
-#search-ingredient-btn {
-  background-color: var(--blueberry-blue);
-  color: var(--cream);
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#search-ingredient-btn:hover {
-  background-color: var(--spice-orange);
 }
