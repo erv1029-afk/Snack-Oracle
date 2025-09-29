@@ -13,7 +13,10 @@ const wisdoms = [
   "Balance flavor with feeling 🥢",
   "Even crumbs can be comforting 🍞",
   "The best snacks are shared 🍋",
-  "Spices are tiny storytellers 🌶️"
+  "Spices are tiny storytellers 🌶️",
+  "Even the smallest bite can spark the biggest joy 🍪" ,
+  "A well-timed treat is the universe saying, You’ve got this 🍫"
+
 ];
 
 export function renderWisdom() {
